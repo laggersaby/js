@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Értéklekérés -> onclick</title>
+	
+	<script type="text/javascript">
+	
+		function ertek() {
+			
+			var input_erteke = document.getElementById('text_input').value;
+			
+			console.log(input_erteke);
+			
+			document.getElementById('lekert_ertek').innerHTML = input_erteke;
+		}
+		
+	</script>
+	
+</head>
+<body>
+
+	<form>
+		<input id="text_input" type="text">	
+	</form>
+
+	<button onclick="ertek()">Kérd le az értékét!</button>
+	
+	<div id="lekert_ertek"></div>
+
+</body>
+</html>
